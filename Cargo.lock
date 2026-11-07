@@ -834,9 +834,9 @@ dependencies = [
 
 [[package]]
 name = "ferrumec-perms"
-version = "0.1.1"
+version = "0.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "78dda0cdd3f88a74173f886a24d3feb766a897c67ccc51ccac78dc0327c9bbd6"
+checksum = "fd7e8076b85f57bd5b4b49f03c870fe3bad5bb7d77e943a462926bc5f3d655a3"
 dependencies = [
  "actix-web",
  "ferrumec 0.5.0",
@@ -2362,9 +2362,9 @@ checksum = "fd3ca314f692efd6c868f8408f53fe444634a845f96c028b97d35f6a1f79f0ee"
 
 [[package]]
 name = "tokio"
-version = "1.53.1"
+version = "1.54.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "202caea871b69668250d242070849eb495be178ed697a3e98aebce5bc81a0bed"
+checksum = "b52fd3255258d26fac7264ab5a76b53c13367136dc011d3d6ad4f8ed070396a3"
 dependencies = [
  "bytes",
  "libc",
@@ -2618,9 +2618,9 @@ checksum = "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a"
 
 [[package]]
 name = "viewset"
-version = "0.6.6"
+version = "0.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bf05b25265fdab7b38bb5c9feb127f54b0fd2c3c41d7ea1f2377bded50d3ad0d"
+checksum = "afaf7cf35577bd0120464f69872e028b59f472065fcc4187e4d9dbd1df7a5845"
 dependencies = [
  "actix-web",
  "async-trait",
@@ -2632,6 +2632,7 @@ dependencies = [
  "serde_json",
  "sqlx",
  "thiserror",
+ "tokio",
  "tracing",
  "uuid",
  "viewset-macros",

@@ -20,7 +20,7 @@ impl Module for AuthorizModule {
         let db = infra.clone().database();
         let cf = infra.cache_factory();
         let absolute_repo = Arc::new(AbsoluteRepo::new(db.clone(), cf.clone()));
-        let middleware = Arc::new(SessionMiddleware::new(cf.clone()));
+        let middleware = Arc::new(viewset::web::create_session_middleware(db.clone(),cf.clone()));
         Ok(Self {
             middleware,
             state: web::Data::new(AppState {
